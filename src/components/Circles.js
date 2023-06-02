@@ -5,7 +5,7 @@ import avo2 from "../assest/media/angryAvocado.webp";
 const Circles = () => {
   const [score, setScore] = useState(0);
   const [moleIndex, setMoleIndex] = useState("");
-  const [timer, setTimer] = useState(50);
+  const [timer, setTimer] = useState(60);
   // to rep. the index of the current mole image
 
   const images = [
@@ -49,7 +49,7 @@ const Circles = () => {
   }
   const restart = () => {
     setScore(0);
-    setTimer(50);
+    setTimer(60);
     setMoleIndex("");
   };
   //   const sound = () => {
