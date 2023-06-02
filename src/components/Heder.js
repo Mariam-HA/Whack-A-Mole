@@ -3,7 +3,7 @@ import React from "react";
 const Heder = () => {
   return (
     <div>
-      <h1>Guac-A-Mole</h1>
+      <h1>Guac-A-Moleeee</h1>
     </div>
   );
 };
