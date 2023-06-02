@@ -18,7 +18,7 @@ const Circles = () => {
 
   useEffect(() => {
     const getRandomAvocado = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * images.length);
+      const randomIndex = Math.floor(Math.random() * 5);
       setMoleIndex(randomIndex);
       setTimer((timer) => timer - 1);
     }, 1000);
@@ -28,12 +28,12 @@ const Circles = () => {
     return () => {
       clearInterval(getRandomAvocado);
     };
-  }, []);
+  }, [images.length]);
 
   //moleIndex
   const handleMole = (index) => {
     if (index === moleIndex) {
-      if (images[moleIndex].value == 1) {
+      if (images[moleIndex].value === 1) {
         setScore((prevScore) => prevScore + 10);
       } else {
         setScore((prevScore) => prevScore - 5);
@@ -44,7 +44,7 @@ const Circles = () => {
     setMoleIndex("");
   };
   // setMoleIndex("");
-  if (timer == 0) {
+  if (timer === 0) {
     alert(`Game over your score: ${score}`);
   }
   return (
@@ -61,7 +61,7 @@ const Circles = () => {
               onClick={() => handleMole(index)}
             >
               {index === moleIndex && (
-                <img src={images[moleIndex].img} alt="Random Image" />
+                <img src={images[moleIndex].img} alt="" />
               )}
             </div>
           );
