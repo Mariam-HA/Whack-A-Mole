@@ -45,15 +45,30 @@ const Circles = () => {
   };
   // setMoleIndex("");
   if (timer === 0) {
-    alert(`Game over your score: ${score}`);
+    alert(`Game Over your score: ${score}`);
   }
+  const restart = () => {
+    setScore(0);
+    setTimer(50);
+    setMoleIndex("");
+  };
+  //   const sound = () => {
+  //     new Audio(sound).sound();
+  //   };
+
   return (
     <div className="start">
       <p>Score: {score}</p>
       <p>Timer: {timer}</p>
+
+      <botton onClick={restart} className="restart">
+        Restart
+      </botton>
+
       <div className="circle-container">
         {[...Array(5)].map((_, index) => {
           // const randomIndex = getRandomAvocado();
+
           return (
             <div
               key={index}

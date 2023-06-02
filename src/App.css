@@ -4,6 +4,7 @@
 }
 h1 {
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .circle-container {
   display: flex;
@@ -15,6 +16,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .circule {
   width: 150px;
   height: 150px;
@@ -27,6 +29,7 @@ h1 {
   width: 150px;
   height: 150px;
 }
+
 p {
   display: flex;
   justify-content: center;
@@ -34,4 +37,25 @@ p {
   background-color: rgb(74, 224, 134);
   font-size: 50px;
   margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(74, 224, 134); */
+  font-size: 40px;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid black;
+  border-width: 2px;
+  background-color: rgb(74, 224, 134);
+}
+/* botton {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
