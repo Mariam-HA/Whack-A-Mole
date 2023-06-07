@@ -2,7 +2,7 @@ import React from "react";
 
 const Heder = () => {
   return (
-    <div>
+    <div className="font-bold">
       <h1>Guac-A-Mole</h1>
     </div>
   );

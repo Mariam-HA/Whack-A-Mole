@@ -5,48 +5,47 @@
 h1 {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 60px;
+  font-size: 40px;
 }
-.circle-container {
+/* .circle-container {
   display: flex;
   justify-content: center;
   margin: 80px;
   border: solid rgba(0, 0, 0);
   border-width: 2px;
-  /* flex-direction: column; */
   flex-direction: row;
   flex-wrap: wrap;
-}
+} */
 
 .circule {
-  width: 125px;
-  height: 125px;
+  width: 120px;
+  height: 120px;
   background-color: black;
   margin: 20px;
   border-radius: 50%;
 }
 
 .circule img {
-  width: 125px;
-  height: 125px;
+  width: 120px;
+  height: 120px;
 }
 
-p {
+/* p {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(74, 224, 134);
-  font-size: 50px;
+  font-size: 30px;
   margin: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+} */
 
 .restart {
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: rgb(74, 224, 134); */
-  font-size: 40px;
+  font-size: 30px;
   margin: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: solid black;
@@ -54,10 +53,3 @@ p {
   background-color: rgb(74, 224, 134);
   font-weight: bolder;
 }
-/* botton {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */

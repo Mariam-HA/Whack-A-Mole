@@ -57,30 +57,45 @@ const Circles = () => {
   //   };
 
   return (
-    <div className="start">
-      <p>Score: {score}</p>
-      <p>Timer: {timer}</p>
+    <div className="flex flex-col  ">
+      <div className="mt-4">
+        <div className="flex flex-row justify-center justify-items-center space-x-4">
+          <p className="font-bold w-[150px] text-center order-solid border-2 border-lime-600 rounded shadow-md">
+            Score: {score}
+          </p>
+          <p className="font-bold w-[150px] text-center order-solid border-2 border-lime-600 rounded shadow-md">
+            Timer: {timer}
+          </p>
+        </div>
+        <div className="flex flex-row justify-center justify-items-center mt-4">
+          <botton
+            onClick={restart}
+            className="font-bold w-[150px] text-center order-solid border-2 border-lime-600 rounded shadow-md"
+          >
+            Restart
+          </botton>
+        </div>
+      </div>
 
-      <botton onClick={restart} className="restart">
-        Restart
-      </botton>
+      <div className="">
+        <div className="flex flex-wrap md:flex-wrap justify-center justify-items-center mt-8 border-2 border-green-900 shadow-md">
+          {[...Array(5)].map((_, index) => {
+            // const randomIndex = getRandomAvocado();
 
-      <div className="circle-container">
-        {[...Array(5)].map((_, index) => {
-          // const randomIndex = getRandomAvocado();
-
-          return (
-            <div
-              key={index}
-              className="circule"
-              onClick={() => handleMole(index)}
-            >
-              {index === moleIndex && (
-                <img src={images[moleIndex].img} alt="" />
-              )}
-            </div>
-          );
-        })}
+            return (
+              <div
+                key={index}
+                //   className="circule"
+                className="rounded-full w-[120px] h-[120px] bg-black m-[20px]"
+                onClick={() => handleMole(index)}
+              >
+                {index === moleIndex && (
+                  <img src={images[moleIndex].img} alt="" />
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
